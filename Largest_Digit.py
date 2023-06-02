@@ -1,3 +1,4 @@
-n=input()
-a=list(n)
-print(max(a))
+a=int(input())
+a=str(a)
+b=list(a)
+print(max(*b))
