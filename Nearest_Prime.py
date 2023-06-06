@@ -10,11 +10,11 @@ for i in range(int(input())):
     f=a+1
     b=a-1
     while True:
-        if prime(f) and prime(b):
-            print(min(f,b))
-            break
         if prime(a):
             print(a)
+            break
+        if prime(f) and prime(b):
+            print(min(f,b))
             break
         if prime(f):
             print(f)
@@ -22,7 +22,5 @@ for i in range(int(input())):
         if prime(b):
             print(b)
             break
-        
         f+=1
         b-=1
-    
