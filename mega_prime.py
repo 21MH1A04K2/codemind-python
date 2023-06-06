@@ -6,19 +6,13 @@ def prime(n):
             return False
     return True
 a=int(input())
-c=0
 if prime(a):
-    a=str(a)
-    for  i in a:
-        i=int(i)
-        if prime(i):
-            c+=1
-    if c==len(str(a)):
-        print("Mega Prime")
+    l=list(str(a))
+    for i in l:
+        if not prime(int(i)):
+            print("Not Mega Prime")
+            break
     else:
-        print("Not Mega Prime")
+        print("Mega Prime")
 else:
     print("Not Mega Prime")
-
-    
-        
