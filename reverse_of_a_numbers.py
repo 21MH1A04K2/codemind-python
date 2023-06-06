@@ -1,3 +1,3 @@
 a=int(input())
-b=str(a)
-print(b[::-1])
+a=str(a)
+print(a[::-1])
