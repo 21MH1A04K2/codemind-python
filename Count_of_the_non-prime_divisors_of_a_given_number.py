@@ -6,9 +6,12 @@ def prime(n):
             return False
     return True
 a=int(input())
-c=0
+c=[]
+d=0
 for i in range(1,a+1):
     if a%i==0:
-        if not prime(i):
-            c+=1
-print(c)
+        c.append(i)
+for i in c:
+    if not prime(i):
+        d+=1
+print(d)
