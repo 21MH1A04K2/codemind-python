@@ -1,4 +1,4 @@
-n=int(input())
+a=int(input())
 arr=list(map(int,input().split()))
 d={}
 c=[]
@@ -14,5 +14,3 @@ if len(c)==0:
     print(-1)
 else:
     print(*c)
-
-   
